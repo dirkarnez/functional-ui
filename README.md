@@ -1,4 +1,5 @@
 functional-ui
 =============
 ### TODO
-- [ ] Table
+- [ ] Basic components - do `table` first
+- [ ] modular
