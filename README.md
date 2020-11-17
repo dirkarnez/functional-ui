@@ -6,3 +6,7 @@ No bundler, no npm / Node, no new rules... just pure, vanilla JavaScript
 ### TODO
 - [ ] Basic components - do `table` first
 - [ ] modular
+- [ ] builder pattern - Async
+- [ ] composition
+- [ ] Lazy loading - the `script` tag
+- [ ] SPA support
