@@ -1,19 +1,38 @@
-function createButton(className, text, onClick) {
-    var btn = document.createElement("BUTTON");
-    btn.innerText = text;
-    if (onClick) {
-        btn.addEventListener("click", function (e) {
-            onClick(e, btn);
-        });
-    }
-
-    btn.className = className;
-    document.body.appendChild(btn);
+function createButton(className, textContent) {
+    var button = document.createElement("button");
+    button.textContent = textContent;
+    button.className = className;
     return {
-        btn,
-        updateText: function (newText) {
-            btn.innerText = newText;
+        button,
+        textContent: function (newText) {
+            button.innerText = newText;
+        },
+        className: function(className) {
+            button.className = className;
         }
+    }
+}
+
+function createParagraph(className, textContent) {
+    var p = document.createElement("p");
+    p.textContent = textContent;
+    p.className = className;
+    return {
+        p,
+        textContent: function (newText) {
+            p.innerText = newText;
+        },
+        className: function(className) {
+            p.className = className;
+        }
+    }
+}
+
+function createDiv(className) {
+    var div = document.createElement("div");
+    div.className = className;
+    return {
+        div
     }
 }
 
